@@ -13,20 +13,40 @@
             padding: 0;
             background-color: #f7f9fc;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
             background: #2c3e50;
             color: #fff;
             padding: 2rem 0;
             text-align: center;
+            width: 100%;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             width: 85%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
             max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 3;
+            margin-right: 2rem;
+        }
+        .video-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #ecf0f1;
+            padding-left: 2rem;
         }
         h1 {
             font-size: 2.5rem;
@@ -51,6 +71,7 @@
             padding: 1rem 0;
             background: #2c3e50;
             color: #fff;
+            width: 100%;
         }
         a {
             color: #3498db;
@@ -74,11 +95,10 @@
         .download-cv:hover {
             background-color: #2980b9;
         }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section ul {
-            padding-left: 1rem;
+        video {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -92,74 +112,83 @@
     </header>
 
     <div class="container">
-        <section id="professional-summary" class="section">
-            <h2>Professional Summary</h2>
-            <p>
-                Graduated in MSc Data Science at the University of Birmingham, UK. Ex Data Engineer with 3 years of experience at Infosys Ltd in the automation of Test Data Management along with proven technical, organizational, and communication skills. Aiming to expand my current skillset, learn new experimental methods, and make a significant contribution as a Data Scientist/Analyst.
-            </p>
-        </section>
+        <div class="content">
+            <section id="professional-summary" class="section">
+                <h2>Professional Summary</h2>
+                <p>
+                    Graduated in MSc Data Science at the University of Birmingham, UK. Ex Data Engineer with 3 years of experience at Infosys Ltd in the automation of Test Data Management along with proven technical, organizational, and communication skills. Aiming to expand my current skillset, learn new experimental methods, and make a significant contribution as a Data Scientist/Analyst.
+                </p>
+            </section>
 
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Masters in Data Science with Distinction</strong> - University of Birmingham (2022-2023)</li>
-                <li>
-                    <strong>Dissertation Project:</strong> Science map embedding by dimensionality reductions of science journals.
-                    <ul>
-                        <li>Developed NLP (Hugging Face modules, Neural Networks AI, and Data modelling techniques).</li>
-                        <li>Implemented Large Language Models, analyzed unstructured data with Selenium, built and deployed ML models.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Masters in Data Science with Distinction</strong> - University of Birmingham (2022-2023)</li>
+                    <li>
+                        <strong>Dissertation Project:</strong> Science map embedding by dimensionality reductions of science journals.
+                        <ul>
+                            <li>Developed NLP (Hugging Face modules, Neural Networks AI, and Data modelling techniques).</li>
+                            <li>Implemented Large Language Models, analyzed unstructured data with Selenium, built and deployed ML models.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="work-experience" class="section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>Automation Test Engineer</strong> - Infosys Ltd, Chennai, India (05/2019 to 04/2022)
-                    <ul>
-                        <li>Led an 8-member team in data migration from a legacy on-prem DB to AWS RDS.</li>
-                        <li>Automated API testing using Behat with Gherkin syntax in PHP.</li>
-                        <li>Managed test data collection, data visualization, and ETL framework workflows.</li>
-                        <li>Reduced testing time from 8 weeks to 3 weeks and received a role upgrade.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>AI Engineer Software Developer Intern</strong> - Radical AI, Remote (03/2024 to 06/2024)
-                    <ul>
-                        <li>Developed AI projects utilizing Google Cloud Embedding and VertexAIEmbeddings.</li>
-                        <li>Built a FastAPI app for YouTube video analysis, integrating several advanced tools.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="work-experience" class="section">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Automation Test Engineer</strong> - Infosys Ltd, Chennai, India (05/2019 to 04/2022)
+                        <ul>
+                            <li>Led an 8-member team in data migration from a legacy on-prem DB to AWS RDS.</li>
+                            <li>Automated API testing using Behat with Gherkin syntax in PHP.</li>
+                            <li>Managed test data collection, data visualization, and ETL framework workflows.</li>
+                            <li>Reduced testing time from 8 weeks to 3 weeks and received a role upgrade.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>AI Engineer Software Developer Intern</strong> - Radical AI, Remote (03/2024 to 06/2024)
+                        <ul>
+                            <li>Developed AI projects utilizing Google Cloud Embedding and VertexAIEmbeddings.</li>
+                            <li>Built a FastAPI app for YouTube video analysis, integrating several advanced tools.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="skills" class="section">
-            <h2>Skills and Core Qualifications</h2>
-            <ul>
-                <li>Programming Languages: C, C++, JAVA, Python, JavaScript, JSON, HTML, Shell scripting, Linux/Unix</li>
-                <li>Test Data Management (TDM) and Master Data Management (MDM) using CI/CD</li>
-                <li>Databases: SQL, NoSQL, Oracle, PostgreSQL, MongoDB, Neo4j, Redshift</li>
-                <li>Tools: Selenium, Informatica, Jupyter, Power BI, Tableau, AWS, Azure DevOps</li>
-                <li>Data Science: Data Cleansing, Data Visualization, Predictive Analysis, Text Analysis</li>
-                <li>Machine Learning: Regression, Classification, Clustering, Neural Networks, PCA, Feature Selection</li>
-            </ul>
-        </section>
+            <section id="skills" class="section">
+                <h2>Skills and Core Qualifications</h2>
+                <ul>
+                    <li>Programming Languages: C, C++, JAVA, Python, JavaScript, JSON, HTML, Shell scripting, Linux/Unix</li>
+                    <li>Test Data Management (TDM) and Master Data Management (MDM) using CI/CD</li>
+                    <li>Databases: SQL, NoSQL, Oracle, PostgreSQL, MongoDB, Neo4j, Redshift</li>
+                    <li>Tools: Selenium, Informatica, Jupyter, Power BI, Tableau, AWS, Azure DevOps</li>
+                    <li>Data Science: Data Cleansing, Data Visualization, Predictive Analysis, Text Analysis</li>
+                    <li>Machine Learning: Regression, Classification, Clustering, Neural Networks, PCA, Feature Selection</li>
+                </ul>
+            </section>
 
-        <section id="additional-info" class="section">
-            <h2>Courses and Certifications</h2>
-            <ul>
-                <li>Amazon Web Services AWS Cloud Practitioner Essentials, AWS Big Data Essentials</li>
-                <li>Google Kaggle Intermediate Machine Learning</li>
-                <li>Industrial training in GSM Technologies (2G/3G/4G)</li>
-            </ul>
+            <section id="additional-info" class="section">
+                <h2>Courses and Certifications</h2>
+                <ul>
+                    <li>Amazon Web Services AWS Cloud Practitioner Essentials, AWS Big Data Essentials</li>
+                    <li>Google Kaggle Intermediate Machine Learning</li>
+                    <li>Industrial training in GSM Technologies (2G/3G/4G)</li>
+                </ul>
 
-            <h2>Languages</h2>
-            <ul>
-                <li>English (IELTS Score: 8), Tamil, Hindi, Telugu</li>
-            </ul>
-        </section>
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (IELTS Score: 8), Tamil, Hindi, Telugu</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="Video CV.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 
     <footer>
@@ -167,5 +196,3 @@
     </footer>
 </body>
 </html>
-
-
