@@ -1,310 +1,195 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-    <!--- basic page needs -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arjun Kumar</title>
-
-    <script>
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Kumar Wandiwash Krishnakumar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 85%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 3;
+            margin-right: 2rem;
+        }
+        .video-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #ecf0f1;
+            padding-left: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #2c3e50;
+            color: #fff;
+            width: 100%;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-cv {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .download-cv:hover {
+            background-color: #2980b9;
+        }
+        iframe {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <h1>Arjun Kumar Wandiwash Krishnakumar</h1>
+        <p>Data Scientist | Automation Test Engineer | AI Engineer</p>
+        <p><a href="mailto:arjunkumarwk1998@gmail.com">arjunkumarwk1998@gmail.com</a> | +447442220504 | Birmingham, UK</p>
+        <p><a href="https://linkedin.com/in/arjun-kumar-w-k" target="_blank">LinkedIn</a> | <a href="https://github.com/arjun1998" target="_blank">GitHub</a></p>
+        <a href="ARJUNKUMAR WANDIWASH KRISHNAKUMAR CV.docx" class="download-cv" download>Download My CV</a>
+    </header>
 
-<body id="top">
-    <!-- preloader -->
-    <div id="preloader">
-        <div id="loader" class="line"></div>
-    </div>
+    <div class="container">
+        <div class="content">
+            <section id="professional-summary" class="section">
+                <h2>Professional Summary</h2>
+                <p>
+                    Graduated in MSc Data Science at the University of Birmingham, UK. Ex Data Engineer with 3 years of experience at Infosys Ltd in the automation of Test Data Management along with proven technical, organizational, and communication skills. Aiming to expand my current skillset, learn new experimental methods, and make a significant contribution as a Data Scientist/Analyst.
+                </p>
+            </section>
 
-    <!-- page wrap -->
-    <div id="page" class="s-pagewrap">
-        <!-- site header -->
-        <header id="masthead" class="s-header">
-             <div class="s-header__block">
-                <div class="s-header__branding">
-                    <p class="site-title">
-                        <a href="index.html" rel="home">Arjun Kumar</a>
-                    </p>
-                </div>
-                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row s-header__nav-wrap">
-                <nav class="s-header__nav">
-                    <ul>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Projects</a></li>
-                        <li><a href="#colophon" class="smoothscroll">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <ul class="s-header__social">
-                    <li><a href="https://linkedin.com/in/arjun-kumar-w-k"><span class="u-screen-reader-text">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/arjun1998"><span class="u-screen-reader-text">GitHub</span></a></li>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Masters in Data Science with Distinction</strong> - University of Birmingham (2022-2023)</li>
+                    <li>
+                        <strong>Dissertation Project:</strong> Science map embedding by dimensionality reductions of science journals.
+                        <ul>
+                            <li>Developed NLP (Hugging Face modules, Neural Networks AI, and Data modelling techniques).</li>
+                            <li>Implemented Large Language Models, analyzed unstructured data with Selenium, built and deployed ML models.</li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-        </header>
+            </section>
 
-        <!-- intro -->
-        <section id="intro" class="s-intro">
-            <div class="row">
-                <div class="column lg-12 s-intro__content">
-                    <div class="s-intro__text">
-                        <h1 class="s-intro__text-huge animate-on-load">Arjun Kumar</h1>
-                        <h3 class="animate-on-load">Data Scientist <span>+</span> Analyst</h3>
-                    </div>
-                    <div class="s-intro__bg"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- about -->
-        <section id="about" class="s-about">
-            <div class="s-about__block s-about__intro">
-                <div class="row">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle animate-on-load">About Me</h2>
-                        <p class="attention-getter animate-on-load">
-                        Graduated in MSc Data Science at the University of Birmingham, UK. Experienced Data Engineer with 3 years at Infosys Ltd, focusing on Test Data Management automation. Skilled in technical, organizational, and communication skills, aiming to expand my skillset and contribute significantly as a Data Scientist / Analyst.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="s-about__block s-about__career">
-                <div class="row s-about__career-header">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">Resume</h2>
-                        <p class="text-huge-title">
-                        My education, work experience, and skills.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row s-about__timeline" data-animate-block>
-                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
-                        <h2 class="text-subtitle">Experience</h2>
-                        <div class="timeline">
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Radical AI</h4>
-                                    <h5 class="timeline__meta">AI Engineer Software Developer Intern</h5>
-                                    <p class="timeline__timeframe">March 2024 - June 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Developed AI projects using Google Cloud Embedding, VertexAIEmbeddings, and Langchain. Built quiz generator and FastAPI app for YouTube video analysis with pydantic and uvicorn. Integrated CORSMiddleware for cross-origin requests and tested integrations.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Infosys Ltd</h4>
-                                    <h5 class="timeline__meta">Systems Analyst</h5>
-                                    <p class="timeline__timeframe">May 2019 - April 2022</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Led a Master Data Management team, managed data migration to AWS RDS, automated API testing with Behat, and performed data visualization with Power BI and Tableau. Achieved significant time and cost savings through automation.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
-                        <h2 class="text-subtitle">Education</h2>
-                        <div class="timeline">
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">University of Birmingham</h4>
-                                    <h5 class="timeline__meta">MSc Data Science with Distinction</h5>
-                                    <p class="timeline__timeframe">2022 - 2023</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Dissertation: Science map embedding by dimensionality reductions of science journals. Developed NLP and machine learning models for data analysis and visualization using TensorFlow, PyTorch, and other tools.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">School of Cool Designers</h4>
-                                    <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
-                                    <p class="timeline__timeframe">August 2012</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row s-about__skills" data-animate-block>
-                    <div class="column lg-12" data-animate-el>
-                        <h2 class="text-subtitle">Skills & Expertise</h2>
-                        <ul class="skill-bars">
-                            <li>
-                            <div class="progress percent90"></div>
-                            <strong>Python & JavaScript</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent85"></div>
-                            <strong>SQL & NoSQL</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent80"></div>
-                            <strong>Data Visualization</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent75"></div>
-                            <strong>Machine Learning</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent85"></div>
-                            <strong>ETL & Data Warehousing</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent80"></div>
-                            <strong>Cloud Technologies (AWS, Azure)</strong>
-                            </li>
+            <section id="work-experience" class="section">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Automation Test Engineer</strong> - Infosys Ltd, Chennai, India (05/2019 to 04/2022)
+                        <ul>
+                            <li>Led an 8-member team in data migration from a legacy on-prem DB to AWS RDS.</li>
+                            <li>Automated API testing using Behat with Gherkin syntax in PHP.</li>
+                            <li>Managed test data collection, data visualization, and ETL framework workflows.</li>
+                            <li>Reduced testing time from 8 weeks to 3 weeks and received a role upgrade.</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- works -->
-        <section id="works" class="s-works">
-            <div class="row">
-                <div class="column lg-12">
-                    <h2 class="text-pretitle">Selected Projects</h2>
-                    <p class="text-huge-title">
-                    Some of the projects I have worked on.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row folio-list block-lg-one-half block-stack-on-550" data-animate-block">
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
-                        <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/project1.jpg" title="Dessertation Project" data-size="1050x700">
-                                <img src="images/portfolio/project1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">AI & Machine Learning</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="https://github.com/arjun1998/Dessertation-Project">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">Project Quiziffy</h4>
-                        </div>
-                        <div class="folio-item__caption">
-                            <p>Developed a quiz generator using Gemini-Pro model integrated with vector store for context-driven question generation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
-                        <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/project2.jpg" title="Project Inventory Management" data-size="1050x700">
-                                <img src="images/portfolio/project2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">Web Development</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="https://github.com/arjun1998/Marvel-Group-project">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">Project Dynamo</h4>
-                        </div>
-                        <div class="folio-item__caption">
-                            <p>Built a FastAPI app for YouTube video analysis, handling video analysis requests and displaying data on the frontend.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- footer -->
-        <footer id="colophon" class="s-footer">
-            <div class="row s-footer__contact-header">
-                <div class="column lg-12">
-                    <h2 class="text-pretitle">Get In Touch</h2>
-                    <p class="text-huge-title">
-                        Feel free to reach out if you want to collaborate with me or just have a chat.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row s-footer__contact-content">
-                <div class="column lg-5 md-6 stack-on-900 left-block">
-                    <p>
-                    I'm available for freelance work or full-time positions. Let's create something amazing together!
-
-                    <div class="s-footer__buttons">
-                        <a href="mailto:arjunkumarwk1998@gmail.com" class="btn btn--primary u-fullwidth">Say Hello</a>
-                        <a href="#0" class="btn btn--stroke u-fullwidth">Get My CV</a>
-                    </div>
-                    </p>
-                </div>
-
-                <div class="column lg-4 md-5 stack-on-900 right-block">
-                    <div class="s-footer__contact-info">
-                        <h2 class="text-subtitle">
-                            Start A Project
-                        </h2>
-                        <ul class="link-list">
-                            <li><a href="mailto:arjunkumarwk1998@gmail.com">arjunkumarwk1998@gmail.com</a></li>
-                            <li><a href="tel:+447442220504">+44 7442 220504</a></li>
+                    </li>
+                    <li>
+                        <strong>AI Engineer Software Developer Intern</strong> - Radical AI, Remote (03/2024 to 06/2024)
+                        <ul>
+                            <li>Developed AI projects utilizing Google Cloud Embedding and VertexAIEmbeddings.</li>
+                            <li>Built a FastAPI app for YouTube video analysis, integrating several advanced tools.</li>
                         </ul>
-                    </div>
+                    </li>
+                </ul>
+            </section>
 
-                    <div class="s-footer__social">
-                        <h2 class="text-subtitle">
-                            Connect
-                        </h2>
-                        <ul class="link-list">
-                            <li><a href="https://linkedin.com/in/arjun-kumar-w-k">LinkedIn</a></li>
-                            <li><a href="https://github.com/arjun1998">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <section id="skills" class="section">
+                <h2>Skills and Core Qualifications</h2>
+                <ul>
+                    <li>Programming Languages: C, C++, JAVA, Python, JavaScript, JSON, HTML, Shell scripting, Linux/Unix</li>
+                    <li>Test Data Management (TDM) and Master Data Management (MDM) using CI/CD</li>
+                    <li>Databases: SQL, NoSQL, Oracle, PostgreSQL, MongoDB, Neo4j, Redshift</li>
+                    <li>Tools: Selenium, Informatica, Jupyter, Power BI, Tableau, AWS, Azure DevOps</li>
+                    <li>Data Science: Data Cleansing, Data Visualization, Predictive Analysis, Text Analysis</li>
+                    <li>Machine Learning: Regression, Classification, Clustering, Neural Networks, PCA, Feature Selection</li>
+                </ul>
+            </section>
 
-            <div class="row s-footer__bottom">
-                <div class="column ss-copyright">
-                    <span>© Copyright Arjun Kumar 2024</span>
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                </div>
+            <section id="additional-info" class="section">
+                <h2>Courses and Certifications</h2>
+                <ul>
+                    <li>Amazon Web Services AWS Cloud Practitioner Essentials, AWS Big Data Essentials</li>
+                    <li>Google Kaggle Intermediate Machine Learning</li>
+                    <li>Industrial training in GSM Technologies (2G/3G/4G)</li>
+                </ul>
 
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
-                    </a>
-                </div>
-            </div>
-        </footer>
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (IELTS Score: 8), Tamil, Hindi, Telugu</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1-OC-CoVagRjdpHXotoNoaISkTx77mItK/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
     </div>
 
-    <!-- JavaScript -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <footer>
+        <p>Connect with me on <a href="https://linkedin.com/in/arjun-kumar-w-k" target="_blank">LinkedIn</a> and explore my work on <a href="https://github.com/arjun1998" target="_blank">GitHub</a>.</p>
+    </footer>
 </body>
 </html>
